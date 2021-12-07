@@ -2,7 +2,7 @@
 Algorithm:
 1. Read the input from the text document and store them into a Counter
 2. Declare a variable called min_fule with initial value of float('inf')
-3. Iterate through the keys of the Counter:
+3. Iterate from 0 to the maximum key of the Counter:
     1. Initialize a variable called fuel with value of 0
     2. Iterate through key-value pairs of the Counter:
         1. Add the fuel needed to the variable fuel
@@ -19,7 +19,7 @@ if __name__ == "__main__":
     
     min_fuel = float('inf')
 
-    for k in position.keys():
+    for k in range(max(position.keys())):
         fuel = 0
 
         for key, value in position.items():
