@@ -1,4 +1,4 @@
-# Advent_of_Code_2021
+# Advent of Code 2021
 
 | Day | Title | Takeaways |
 | ---- | ---------------- | ---------------------- |
@@ -10,4 +10,5 @@
 | 6 | Lanternfish | 1. `defaultdict` or `Counter` can be a data structure to ease the time complexity of the algorithm |
 | 7 | The Treachery of Whales | 1. Second time to implement `Counter` in the algorithm<br>2. In *Python*, `float("inf")` refers to the positive infinity, and `float("-inf")` represents the negative infinity |
 | 8 | Seven Segment Search | 1. A visual problem that makes full use of `set intersection` and `set reduction`<br>2. Use `numpy` to covert multidimensional arrar into 1D array: `numpyArrayName.flatten()`<br>3. There are two ways to get the key in dictionary given a value:<br>(i). `list(mydict.keys())[list(mydict.values()).index(GIVEN_VALUE)]`<br>(ii). Invert the original dictionary: `invertedMydict = {value : key for key, value in mydict.items()}`<br>4. Difference between `sorted()` and `.sort()`:<br>(i) `.sort()` sorts the variable in place, and can only be used on `list`<br>(ii). `sorted()` sorts the variable into a newly created one, and can be used on any iterable<br>5. *CAVEAT:* `sorted(string_name)` will split the orginal `string` into `character`, if we still want to keep the `string` structure, we need to implement this way: `''.join(sorted(string_name))` |
+| 9 | Smoke Basin | 1. A graph problem with the help of `dictionary` structure<br>2. `myDict.get(key, defaultValue)` returns `defalutValue` if `key` is not in the `dictionary`<br>3. If a function has multiple `yield`, the function will return each `yield` one by one, and each `yield` returns a `generator` which is only be stored on the fly, instead in memory. For more information on `yield`, please refer to this [Stack Overflow post](https://stackoverflow.com/a/231855)<br>4. *Part 2* involves a `BFS` with the help of a `set` and a `stack` |
 
