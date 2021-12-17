@@ -18,4 +18,5 @@
 | 14 | Extended Polymerization | 1. Another puzzle solved with the help of `defaultdict`<br>2. `defaultdict(int)` defines the default value is `0`. If we want to set the default value to `1`, we can `defaultdict(lambda:1)` |
 | 15 | Chiton | 1. Find the shortest path or the minimum cost path with the help of [Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) and the implementaion of [Heap](https://docs.python.org/3/library/heapq.html)<br>2. If the `Heap` consists of `Tuples`, the `Heap` will take the first item in each tuple as the priority |
 | 16 | Packet Decoder | 1. Implement `recursion` to solve the puzzle with multiple `base case` and `recursive case`<br>2. When convert `hexadecimal` into `binary` string, it would better to use `.zfill(len(hexadecimal) * 4)` to fill the `binary` string with zeros and avoid `string index out of bound` error |
+| 17 | Trick Shot | 1. An interesting `free fall`（自由落体） puzzle |
 
